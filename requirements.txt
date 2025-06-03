@@ -1,0 +1,9 @@
+ftfy
+regex
+torch
+torchvision
+torchaudio
+scikit-learn
+pandas
+matplotlib
+tqdm
