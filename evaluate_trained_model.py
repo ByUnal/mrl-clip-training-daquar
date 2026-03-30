@@ -184,16 +184,16 @@ if __name__ == "__main__":
     print(f"Model architecture: {nesting_list} dimensions")
     
     # Load and analyze
-    # results, interesting_questions = evaluate_granularity_performance(model, test_loader, device)
+    results, interesting_questions = evaluate_granularity_performance(model, test_loader, device)
     print("\n------------------------------------------------\n")
-    metrics, info_preservation, embeddings_data = evaluate_nested_representations(model, test_loader, device)
+    # metrics, info_preservation, embeddings_data = evaluate_nested_representations(model, test_loader, device)
     
-    # Print metrics
-    for dim in metrics:
-        print(f"Dimension {dim}:")
-        for metric_name, value in metrics[dim].items():
-            print(f"  {metric_name}: {value:.2f}%")
+    # # Print metrics
+    # for dim in metrics:
+    #     print(f"Dimension {dim}:")
+    #     for metric_name, value in metrics[dim].items():
+    #         print(f"  {metric_name}: {value:.2f}%")
     
-    print("\nInformation preservation:")
-    for dim, value in info_preservation.items():
-        print(f"  Dim {dim}: {value:.4f}")
+    # print("\nInformation preservation:")
+    # for dim, value in info_preservation.items():
+    #     print(f"  Dim {dim}: {value:.4f}")
